@@ -1,0 +1,19 @@
+*** README ***
+
+    rgrep.rb is a recursive grep, written in Ruby.
+A recursive grep means that it grep-s recursively,
+starting from the current directory, into sub-directories.
+
+Current Version;
+    Current version is V0.1.0.
+
+USAGE:;
+    rgrep.rb 'pattern' 'filename' ['filename' … ]
+	
+    Be careful to enclose pattern and each filename in single-quotes, 
+so that shell won't glob them.
+
+Apologies;
+    Note that rgrep.rb digs in the Current Directory only.
+    Neither rgrep.rb doesn't follow symbolic links.
+	Pattern matching is done with Ruby's Regexp class.
